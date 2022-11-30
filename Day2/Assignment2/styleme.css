@@ -1,0 +1,64 @@
+
+body{
+    background-color: wheat;
+    padding: 0 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#heading{
+    color: cornflowerblue;
+    font-size: 40pt;
+    text-align: left;
+    font-weight: bolder;
+    margin: 2%;
+}
+
+#aboutMe{
+    color:slategrey;
+    font-size:20pt;
+    margin: 2%;
+}
+
+.title{
+    color: cornflowerblue;
+    margin: 2%;
+    font-size: 18pt;
+    font-weight: bold;
+    height: 10px;
+}
+
+
+ul{
+    color:peru;
+    font-size: 15pt;
+    margin: 2%;
+    
+}
+
+ol{
+    color:peru;
+    font-size: 15pt;
+    margin: 2%;
+    padding-left: 60px;
+}
+
+a{
+    color: rgb(255, 0, 0);
+    
+}
+
+.validator{
+   padding-left: 15px;
+   padding-top: 10px;
+    
+}
+.name{
+    color: darkolivegreen;
+    font-style: italic;
+}
+
+h3{
+    font-size: 15pt;
+    color: cornflowerblue;
+    margin: 2%;
+}
