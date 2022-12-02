@@ -8,17 +8,19 @@
 }
 
 #menu{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 'm1 m2 m3';
     background-color: darkslategray;
     color: white;
     padding: 1%;
+   
     border-style: solid;
     border-color: black;
     text-align: left;
     padding-bottom: 0%;
     padding-top: 0%;
     padding-left: 0%;
+    padding-right: 80%;
     font-size: 15pt;
 
     
@@ -28,7 +30,7 @@
     padding: 1%;
     border-style: solid;
     border-color: black;
-   
+    text-align: center;
 
 
 }
@@ -55,12 +57,13 @@
     width: 100%;
     padding-bottom: 40%;
     background-color: gray;
+    
 }
 
 #column{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     grid-template-areas: 'c1 c2 c2 c3';
+    width: 99%;
 }
 
 #footer{
