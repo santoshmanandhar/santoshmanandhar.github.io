@@ -20,7 +20,7 @@ function myFunctionTest(expected, found) {
 
 //SUM ARRAY ELEMENTS
 function sum(add){
-    return add.reduce(function(accumulator, elem){return accumulator+elem;},0);
+    return add.reduce((accumulator, elem) => accumulator+elem,0);
 
 }
 console.log("Expected output of sum [2,3,5] is 10  " + myFunctionTest(10, sum([2,3,5])));
@@ -28,16 +28,14 @@ console.log("Expected output of sum [2,3,5] is 10  " + myFunctionTest(10, sum([2
 
 //MULTIPLY ARRAY ELEMENTS
 function multiply(mult){
-    return mult.reduce(function(prod, elem){return prod*elem;},1);
+    return mult.reduce((prod, elem)=> prod*elem,1);
 }
 console.log("Expected output of multiply[2,3,5] is 30  " + myFunctionTest(30, multiply([2, 3,5])));
 
 
 //REVERSE STRING
 function reverse(str){
-    return str.split('').reduce((prev, next)=>
-         next + prev
-    ,'')
+    return str.split('').reduce((prev, next)=>next + prev);
 }
 console.log("Expected output of reverse(!dlroW olleH) is Hello World!  " + myFunctionTest("Hello World!", reverse("!dlroW olleH")));
 
@@ -55,9 +53,6 @@ console.log("Expected output of findLongestWord[Google, Yahoo, Tesla, Apple, Ama
 
 //FILTER LONG WORDS -- IT TAKES AN ARRAY OF WORDS AND AN INTEGER i AND RETURNS THE ARRAY OF WORDS THAT ARE LONGER THAN i
 function filterLongWords(word, i){
-    let x= word.reduce(function(val,num){
-        return val.length > num;
-    },"");
-    console.log(x);
+    return word.filter((w)=>w.length>i);
 }
 console.log("Expected output of filterLongWords['Google', 'Yahoo', 'Tesla', 'Apple', 'Amazon', 'Microsoft'] is ['Google', 'Amazon', 'Microsoft']  " + myFunctionTest(JSON.stringify(['Google', 'Amazon', 'Microsoft']), JSON.stringify(filterLongWords(['Google', 'Yahoo', 'Tesla', 'Apple', 'Amazon', 'Microsoft'], 5))));

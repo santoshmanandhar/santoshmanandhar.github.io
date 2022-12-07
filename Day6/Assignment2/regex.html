@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
         <link href="style.css" rel="stylesheet">
         <title>
             Regular Expression Assignment
@@ -15,12 +17,12 @@
         <p id="message">We'll never share your email with anyone else.</p>
 
         <label>Password</label>
-        <input type="password" id ="password" placeholder="Password" class="box" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{10,}$" title="Must contain at least one number and one uppercase and one lowercase, and at least 10 or more characters." >
+        <input type="password" id ="password" name="password" placeholder="Password" class="box">
         <div>
             <input type="checkbox" id="check"> 
             <label for="check" id="checklabel">Check me out</label>
         </div>
-        <input type="submit" value="Submit" id="button">
+        <input type="submit" value="Submit" id="submit">
     </form>
     </body>
 </html>
