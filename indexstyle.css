@@ -33,3 +33,8 @@ a{
     bottom:10px;
     background-color: black;
 }
+li{
+    margin: 0.2%;
+    font-size: 15pt;
+    color: antiquewhite;
+}
