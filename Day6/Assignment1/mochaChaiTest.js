@@ -1,26 +1,26 @@
 describe("sum", function () {
-    it("Sum of [2,4,6] us 12", function () {
-      assert.equal(sum([2, 4, 6]), 12);
+    it("Sum of [5,2,10] is 12", function () {
+      assert.equal(sum([5,2,10]), 17);
     });
   });
   
   describe("multiply", function () {
-    it("Multiple of [2,4,6] us 48", function () {
-      assert.equal(multiply([2, 4, 6]), 48);
+    it("Multiple of [5,2,10] iss 100", function () {
+      assert.equal(multiply([5,2,10]), 100);
     });
   });
   
   describe("reverse", () => {
-    it("Reverse of 'random' is 'modnar'", () => {
-      assert.equal(reverse("random"), "modnar");
+    it("Reverse of 'laog' is 'goal'", () => {
+      assert.equal(reverse("laog"), "goal");
     });
   });
   
   describe("filter long words", () => {
-    it("the words longer than length 3 in array ['ball', 'football', 'bal', 'lab'] is ['ball', 'football']", () => {
+    it("the words longer than length 7 in array ['football', 'hockey', 'cricket', 'badminton'] is ['football','badminton']", () => {
       assert.equal(
-        JSON.stringify(filterLongWords(["ball", "football", "bal", "lab"], 3)),
-        JSON.stringify(["ball", "football"])
+        JSON.stringify(filterLongWords(["football", "hockey", "cricket", "badminton"], 7)),
+        JSON.stringify(["football","badminton"])
       );
     });
   });
