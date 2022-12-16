@@ -2,7 +2,7 @@
     display:grid;
     grid-template-areas: 'p . .' 
                           'c . .'
-                          'v f l';
+                          'v v v';
 }
 body{
     color: white;
@@ -33,19 +33,17 @@ a{
     font-size: 15pt;
     color: antiquewhite;
 }
-#footer-logo{
-    grid-area:f;
-}
+
 #footer{
+
     position: absolute;
     bottom: 5px;
     left: 600px;
     text-align: center;
 }
 #logo{
-    grid-area:l;
     height: 50px;
-    position: absolute;
+    /* position: absolute; */
     right:10px;
     bottom:10px;
     background-color: black;
