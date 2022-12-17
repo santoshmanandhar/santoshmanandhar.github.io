@@ -9,13 +9,35 @@ body{
     font-size: large;
     background-image: url('img/DSC00278.JPG');
     background-size: cover;
+    
 }
 #content{
     grid-area:c;
 }
 #validator{
     grid-area:v;
+    display:flex;
+    vertical-align: middle;
+    padding: 0;
+    margin:0;
 }
+#foot-left{
+    padding-top:18px;
+    width:20%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#foot-mid{
+    width:60%;
+    text-align: center;
+}
+
+#foot-right{
+    width:20%;
+    text-align: right;
+}
+
 #photo{
     grid-area:p;
     width:300px;
